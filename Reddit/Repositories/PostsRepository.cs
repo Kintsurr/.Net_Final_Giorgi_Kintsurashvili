@@ -23,6 +23,7 @@ namespace Reddit.Repositories
 
             var posts = _context.Posts.AsQueryable();
 
+
             if (isAscending == false) {
                 posts = posts.OrderByDescending(GetSortExpression(SortTerm));
             }
